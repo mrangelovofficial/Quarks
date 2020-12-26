@@ -1,0 +1,174 @@
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    letter-spacing: -1px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background: rgb(1,94,234);
+    background: -moz-linear-gradient(90deg, rgba(1,94,234,1) 0%, rgba(0,192,250,1) 71%);
+    background: -webkit-linear-gradient(90deg, rgba(1,94,234,1) 0%, rgba(0,192,250,1) 71%);
+    background: linear-gradient(90deg, rgba(1,94,234,1) 0%, rgba(0,192,250,1) 71%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#015eea",endColorstr="#00c0fa",GradientType=1);     
+}
+
+img {
+    max-width: 100%
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,a {
+    margin: 0;
+    text-decoration: none;
+    letter-spacing: .5px
+}
+
+
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 40% 1fr 60px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    grid-row-gap: 50px;
+}
+
+header{
+    align-self: end;
+}
+
+div#Logo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mainContent {
+    align-self: start;
+    width: 100%;
+}
+
+
+.mainForm {
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    transition:all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -webkit-transition:all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -moz-transition:all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -ms-transition:all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -o-transition:all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.hideForm{
+    transition:all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -webkit-transition:all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -moz-transition:all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -ms-transition:all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -o-transition:all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+
+.mainForm input {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    box-shadow: 0px 0px 9px 0px rgba(32, 32, 32, 0.18);
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.mainForm label{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    width: 23px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.mainForm label:hover{
+    width: 28px;
+    transition:all 0.1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -webkit-transition:all 0.1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -moz-transition:all 0.1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -ms-transition:all 0.1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -o-transition:all 0.1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.mainForm h2{
+    color: rgb(0,0,0,0.8);
+}
+
+#submitURL {
+    display: none;
+}
+
+footer a {
+    color:#fff;
+}
+
+.congratulation {
+    max-height: 0px;
+}
+
+.congratulation p {
+    margin-top: 20px;
+    padding: 3% 9%;
+    background: #619bf1;
+    color: #fff;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+.hideDefault {
+    padding-bottom: 50px;
+    max-height: 500px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.congratulation span {
+    color: #5796f4;
+    display: block;
+}
+
+.congratulationBTN span {
+    display: inline-block;
+    background: #619bf1;
+    color: #fff;
+    margin: 20px 1.2%;
+    padding: 2% 5%;
+    cursor: pointer;
+}
